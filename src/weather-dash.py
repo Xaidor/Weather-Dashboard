@@ -31,8 +31,8 @@ class WeatherDashboard:
 
     def fetch_weather(self, city):
         """Fetch weather data from OpenWeather API"""
-        base_url = "http://api.openweathermap.org/data/2.5/weather"
-        params = {
+        base_url = "http://api.openweathermap.org/geo/1.0/direct?" #Changed for geo api. Geo api allows parameters for the city instead of using latitude and longitude from the origional
+        params = {    
             "q": city,
             "appid": self.api_key,
             "units": "imperial"
@@ -74,9 +74,9 @@ def main():
     # Create bucket if needed
     dashboard.create_bucket_if_not_exists()
     
-    cities = ["Philadelphia", "Seattle", "New York"]
+    cities = ["Detroit", "Philadelphia", "New York"]
     
-    for city in cities:
+    for city in cities: 
         print(f"\nFetching weather for {city}...")
         weather_data = dashboard.fetch_weather(city)
         if weather_data:
