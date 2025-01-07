@@ -1,5 +1,5 @@
 # Weather-Dashboard
-Pull data form a weather source using the API and put the data in side an AWS S3 bucket
+Fetch real-time weather data from the OpenWeather API and securely store it in an AWS S3 bucket
 ---
 Grab weather data using the Open Weather API
 </br>
