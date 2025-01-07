@@ -11,9 +11,13 @@ load_dotenv()
 
 class WeatherDashboard:
     def __init__(self):
-        self.api_key = os.getenv('OPENWEATHER_API_KEY')
-        self.bucket_name = os.getenv('AWS_BUCKET_NAME'(random.range(3))) #Added random numbers to better insure the S3 bucket name is available 
+        self.api_key = os.getenv("OPENWEATHER_API_KEY")
+        self.bucket_name = os.getenv("AWS_BUCKET_NAME") 
         self.s3_client = boto3.client('s3')
+
+# Added random numbers to better insure the S3 bucket name is available 
+        random_ints = random.randint(100, 300) 
+        self.bucket_name = f"{self.bucket_name}-{random_ints}" 
 
     def create_bucket_if_not_exists(self):
         """Create S3 bucket if it doesn't exist"""
@@ -31,7 +35,7 @@ class WeatherDashboard:
 
     def fetch_weather(self, city):
         """Fetch weather data from OpenWeather API"""
-        base_url = "http://api.openweathermap.org/geo/1.0/direct?" #Changed for geo api. Geo api allows parameters for the city instead of using latitude and longitude from the origional
+        base_url = "https://api.openweathermap.org/data/2.5/weather?" 
         params = {    
             "q": city,
             "appid": self.api_key,
