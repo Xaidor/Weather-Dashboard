@@ -15,22 +15,22 @@ Before running this project, make sure you have the following:
 
 ## Setup and Installation  
 1. **Clone the Repository**  
-   ```bash  
+   ```sh  
    git clone https://github.com/your-username/weather-data-to-s3.git  
    cd weather-data-to-s3
 
 2. **Set Up a Virtual Environment**
-    ```bash
+    ```sh
     python -m venv venv  
     source venv/bin/activate  # For Windows: venv\Scripts\activate
 
 3. **Install Dependencies**
-     ```bash
+     ```sh
     pip install -r requirements.txt  
 
 5. **Add Your API Key and Configuration**
  - Create a .env file in the root directory:
-  ```bash
+  ```sh
   OPENWEATHER_API_KEY==<your_openweather_api_key>  
   AWS_BUCKET_NAME==<unique-bucket-name>
 ```
@@ -43,7 +43,7 @@ Before running this project, make sure you have the following:
 
 ***Running the Application***
 Run the script:
-  ```bash
+  ```sh
    python app.py
 ```
 
