@@ -17,7 +17,7 @@ Before running this project, make sure you have the following:
 1. **Clone the Repository from [Shae's repository](https://github.com/ShaeInTheCloud)**  
    ```sh  
    git clone https://github.com/ShaeInTheCloud/30days-weather-dashboard.git  
-   cd weather-data-to-s3
+   cd 30days-weather-dashboard
 
 2. **Set Up a Virtual Environment**
     ```sh
