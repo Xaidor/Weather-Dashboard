@@ -13,5 +13,40 @@ Before running this project, make sure you have the following:
 - An OpenWeather API key (sign up [here](https://openweathermap.org/api))  
 - AWS CLI configured with an IAM user having S3 permissions ([Set up AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))  
 
+## Setup and Installation  
+1. **Clone the Repository**  
+   ```bash  
+   git clone https://github.com/your-username/weather-data-to-s3.git  
+   cd weather-data-to-s3
+
+2. **Set Up a Virtual Environment**
+    ```bash
+    python -m venv venv  
+    source venv/bin/activate  # For Windows: venv\Scripts\activate
+
+3. **Install Dependencies**
+     ```bash
+    pip install -r requirements.txt  
+
+5. **Add Your API Key and Configuration**
+ - Create a .env file in the root directory:
+  ```bash
+  OPENWEATHER_API_KEY==<your_openweather_api_key>  
+  AWS_BUCKET_NAME==<unique-bucket-name>
+```
+---
+## How It Works
+
+1. The application sends a GET request to the OpenWeather API to retrieve weather data for a specific location.
+2. The data is saved to an AWS S3 bucket.
+3. To avoid bucket name conflicts, a random number is appended to the bucket prefix.
+
+***Running the Application***
+Run the script:
+  ```bash
+   python app.py
+```
+
+
 
 
