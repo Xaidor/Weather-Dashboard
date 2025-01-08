@@ -14,9 +14,9 @@ Before running this project, make sure you have the following:
 - AWS CLI configured with an IAM user having S3 permissions ([Set up AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))  
 
 ## Setup and Installation  
-1. **Clone the Repository**  
+1. **Clone the Repository from [Shae's repository](https://github.com/ShaeInTheCloud)**  
    ```sh  
-   git clone https://github.com/your-username/weather-data-to-s3.git  
+   git clone https://github.com/ShaeInTheCloud/30days-weather-dashboard.git  
    cd weather-data-to-s3
 
 2. **Set Up a Virtual Environment**
