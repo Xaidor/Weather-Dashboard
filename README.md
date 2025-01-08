@@ -1,4 +1,4 @@
-# Collect Weather Data 
+# Weather Data to AWS S3 Bucket - Day 01 of the 30-Day DevOps Challenge 
 
 Welcome to Day 01 of the **#DevOpsAllStarChallenge**! This project demonstrates how to build a Python application that fetches real-time weather data from the OpenWeather API and stores it in an AWS S3 bucket. It's a simple yet effective way to kickstart cloud-based storage workflows while managing data dependencies with a virtual environment.  
 
